@@ -1,0 +1,12 @@
+{
+    "RBTextViewField":
+    {
+        "backgroundColor": "ref://color-background",
+        
+        "textMargin": [ 5, 10, 5, 10 ],
+        
+        "font": "ref://standard-body-font",
+        "textColor": "ref://color-text-dark",
+        "placeholderTextColor": "ref://palette-grey-500",
+    }
+}

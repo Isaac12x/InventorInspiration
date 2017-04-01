@@ -1,0 +1,79 @@
+{
+    "toolbar-button":
+    {
+        "inherits": "ref://base-toolbar-button"
+    },
+    
+    "toolbar-toggle-button":
+    {
+        "inherits": "ref://base-toolbar-button",
+        
+        "highlighted":
+        {
+            "titleColor": "ref://color-primary-darker",
+            "imageTintColor": "ref://color-primary-darker"
+        },
+        
+        "selected":
+        {
+            "titleColor": "ref://color-primary-darker",
+            "imageTintColor": "ref://color-primary-darker"
+        }
+    },
+    
+    "base-toolbar-button":
+    {
+        "clearPreviousThemingValues": true,
+        
+        "borderWidth": 0,
+        "padding": [ 2, 2, 2, 2 ],
+        "orientation": "vertical",
+        
+        "backgroundColor": "#00000000",
+        "titleColor": "ref://color-text-light",
+        "imageTintColor": "ref://color-icon-light",
+        
+        "imageView":
+        {
+            "alpha": 1.0,
+            "contentMode": "scaleAspectFit"
+        },
+        
+        "titleLabel":
+        {
+            "font": "ref://standard-body-font"
+        },
+        
+        "highlighted":
+        {
+            "titleColorAlpha": 0.5,
+            
+            "imageView":
+            {
+                "alpha": 0.5
+            }
+        },
+        
+        "selected":
+        {
+            "titleColorAlpha": 0.5,
+            
+            "imageView":
+            {
+                "alpha": 0.5
+            }
+        },
+        
+        "disabled":
+        {
+            "titleColorAlpha": 0.5,
+            "borderColorAlpha": 0.5,
+            "backgroundColorAlpha": 0.5,
+            
+            "imageView":
+            {
+                "alpha": 0.5
+            }
+        }
+    }
+}

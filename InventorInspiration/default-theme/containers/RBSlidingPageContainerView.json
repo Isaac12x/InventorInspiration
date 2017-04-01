@@ -1,0 +1,15 @@
+{
+    "RBSlidingPageContainerView":
+    {
+        "header":
+        {
+            "backgroundColor": "ref://color-primary",
+            "margin": [ 5, 0, 5, 0 ],
+            
+            "labels":
+            {
+                "textColor": "ref://color-text-light"
+            }
+        }
+    }
+}

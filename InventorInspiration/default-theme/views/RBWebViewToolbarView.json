@@ -1,0 +1,32 @@
+{
+    "RBWebViewToolbarView":
+    {
+        "clearPreviousThemingValues": true,
+        
+        "backgroundColor": "ref://color-primary",
+        
+        "button_back":
+        {
+            "inherits": "ref://toolbar-button",
+            "image": "glyph://caret-left/color-icon-light/32",
+        },
+        
+        "button_forward":
+        {
+            "inherits": "ref://toolbar-button",
+            "image": "glyph://caret-right/color-icon-light/32",
+        },
+        
+        "button_stop":
+        {
+            "inherits": "ref://toolbar-button",
+            "image": "glyph://stop/color-icon-light/32",
+        },
+        
+        "button_reload":
+        {
+            "inherits": "ref://toolbar-button",
+            "image": "glyph://refresh/color-icon-light/32",
+        }
+    }
+}

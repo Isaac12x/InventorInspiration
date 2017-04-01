@@ -1,0 +1,17 @@
+{
+    "RBBannerExtendView":
+    {
+        "backgroundColor": "#FFFFFFFF",
+        
+        "bannerImageContentMode": "scaleaspectfill",
+        
+        "effect": "blur",
+        "effectDirectionOpenToClose": true,
+        
+        "allowOpening": true,
+        
+        "refreshIndicatorViewStyle": "white",
+        
+        "pullIndicatorImage": "glyph://arrow-down/#555555FF/30"
+    }
+}

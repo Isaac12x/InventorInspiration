@@ -1,0 +1,12 @@
+{
+    "RBTooltipView":
+    {
+        "backgroundColor": "ref://color-primary",
+        
+        "label":
+        {
+            "font": "ref://standard-body-font",
+            "textColor": "ref://color-text-light"
+        }
+    }
+}

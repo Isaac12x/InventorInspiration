@@ -1,0 +1,9 @@
+{
+    "RBBaseCellView":
+    {
+        "buttons":
+        {
+            "inherits": "ref://accent-button",
+        }
+    },
+}

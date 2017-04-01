@@ -1,0 +1,79 @@
+{
+    "RBMenuView":
+    {
+        "segments":
+        {
+            "positioner":
+            {
+                "spacing": 5,
+                "dimensions": [ 1 ],
+                "orientation": "vertical",
+                "sizing": "evenly",
+                "margin": [ 0, 0, 0, 0]
+            },
+            
+            "buttonHeights": 50,
+            "customButtonHeights": 50,
+            
+            "header":
+            {
+                "titleLabel":
+                {
+                    "padding": [ 10, 10, 10, 10 ],
+                    
+                    "backgroundColor": "ref://color-primary",
+                    
+                    "textAlignment": "center",
+                    "textColor": "ref://color-text-light",
+                    "font": "ref://standard-headline-font"
+                }
+            },
+            
+            "buttons":
+            {
+                "clearPreviousTheming": true,
+                
+                "inherits": "ref://RBBaseCellView",
+                
+                "body":
+                {
+                    "backgroundColor": "ref://color-accent",
+                    
+                    "titleLabel":
+                    {
+                        "textColor": "ref://color-text-light"
+                    },
+                    
+                    "highlighted":
+                    {
+                        "backgroundColor": "ref://color-accent-darker",
+                        
+                        "titleLabel":
+                        {
+                            "textColor": "ref://color-text-light"
+                        }
+                    },
+                    
+                    "selected":
+                    {
+                        "backgroundColor": "ref://color-accent-darker",
+                        
+                        "titleLabel":
+                        {
+                            "textColor": "ref://color-text-light"
+                        }
+                    }
+                }
+            },
+            
+            "buttonPositioner":
+            {
+                "spacing": 5,
+                "dimensions": [ 1 ],
+                "orientation": "vertical",
+                "sizing": "evenly",
+                "margin": [ 0, 0, 0, 0]
+            }
+        }
+    }
+}

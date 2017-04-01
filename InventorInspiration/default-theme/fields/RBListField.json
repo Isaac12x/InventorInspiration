@@ -1,0 +1,9 @@
+{
+    "RBListField":
+    {
+        "inputView":
+        {
+            "textColor": "ref://color-text-dark"
+        }
+    },
+}

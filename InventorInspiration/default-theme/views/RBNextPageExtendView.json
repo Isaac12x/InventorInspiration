@@ -1,0 +1,11 @@
+{
+    "RBNextPageExtendView":
+    {
+        "backgroundColor": "ref://color-background",
+        
+        "activityView":
+        {
+            "style": "gray"
+        }
+    }
+}

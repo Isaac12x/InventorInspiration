@@ -1,0 +1,6 @@
+framework module Redbeard {
+  umbrella header "Redbeard.h"
+
+  export *
+  module * { export * }
+}

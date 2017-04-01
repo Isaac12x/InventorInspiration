@@ -1,0 +1,62 @@
+{
+    "RBImageSelectionField":
+    {
+        "itemSize": [ 150, 150 ],
+        
+        "failureImage": "glyph://exclamation-triangle/#FF0000/32",
+        "failureImageContentMode": "center",
+        
+        "selectedOverlayImage": "glyph://check/color-accent/32",
+        "selectedOverlayImageContentMode": "center",
+        
+        "loadingImage": "glyph://picture-o/color-accent/32",
+        "loadingImageContentMode": "center",
+        
+        "positioner":
+        {
+            "spacing": 0,
+            "dimensions": [ 1 ],
+            "orientation": "horizontal",
+            "sizing": "size",
+            "margin": [0, 0, 0, 0]
+        },
+        
+        "images":
+        {
+            "body":
+            {
+                "imageView":
+                {
+                    "alpha": 1,
+                    "contentMode": "scaletofill"
+                },
+                
+                "overlayImageView":
+                {
+                    "hidden": true
+                },
+                
+                "highlighted":
+                {
+                    "imageView":
+                    {
+                        "alpha": 0.5
+                    }
+                },
+                 
+                "selected":
+                {
+                    "imageView":
+                    {
+                        "alpha": 0.5
+                    },
+                    
+                    "overlayImageView":
+                    {
+                        "hidden": false
+                    }
+                }                
+            }
+        }
+    }
+}

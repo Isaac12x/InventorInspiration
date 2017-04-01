@@ -1,0 +1,8 @@
+{
+    "RBManagedFormInputToolbar":
+    {
+        "translucent": true,
+        "buttonTintColor": "ref://color-accent",
+        "barTintColor": "ref://color-background"
+    }
+}

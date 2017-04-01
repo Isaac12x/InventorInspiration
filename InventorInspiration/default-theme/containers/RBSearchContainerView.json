@@ -1,0 +1,52 @@
+{
+    "RBSearchContainerView":
+    {
+        "barHeight": 35,
+        
+        "bar":
+        {
+            "backgroundColor": "ref://color-primary",
+            "margin": [ 10, 10, 10, 10 ],
+            "spacing": 5,
+            
+            "textField":
+            {
+                "pillCorners": true,
+                
+                "borderWidth": 1,
+                "borderColor": "#FFFFFF",
+                "backgroundColor": "#FFFFFF00",
+                
+                "textColor": "ref://color-text-light",
+                
+                "leftViewMargin": [ 0, 10, 0, 0 ],
+            },
+            
+            "textFieldEmblemImageView":
+            {
+                "image": "glyph://search/color-icon-light/22",
+                "contentMode": "scaleAspectFit"
+            },
+            
+            "cancelButton": "ref://toolbar-button"
+        },
+        
+        "opened":
+        {
+            "bar":
+            {
+                "textField":
+                {
+                    "textColor": "ref://color-text-dark",
+                    "borderColor": "ref://color-background",
+                    "backgroundColor": "ref://color-background"
+                },
+                
+                "textFieldEmblemImageView":
+                {
+                    "image": "glyph://search/color-icon-dark/22",
+                }
+            }
+        }
+    }
+}

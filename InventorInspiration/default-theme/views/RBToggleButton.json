@@ -1,0 +1,9 @@
+{
+    "RBToggleButton":
+    {
+        "button":
+        {
+            "inherits": "ref://button"
+        }
+    }
+}

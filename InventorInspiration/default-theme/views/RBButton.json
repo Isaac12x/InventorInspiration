@@ -1,0 +1,6 @@
+{
+    "RBButton":
+    {
+        "inherits": "ref://button"
+    }
+}

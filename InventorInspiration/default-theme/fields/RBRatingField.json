@@ -1,0 +1,8 @@
+{
+    "RBRatingField":
+    {
+        "orientation": "horizontal",
+        "filledImage": "glyph://star/palette-yellow-700/32",
+        "unfilledImage": "glyph://star/palette-grey-500/32",
+    }
+}

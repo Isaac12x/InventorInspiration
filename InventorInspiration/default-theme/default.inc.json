@@ -1,0 +1,88 @@
+{
+    "include": [
+                
+                "comment: Please see https://www.materialui.co/colors for colors. example use: ref://palette-grey-500",
+                "material-design-palette.inc.json"
+                
+                ],
+    
+    "themes": [
+               
+               "comment:------------------------------------------ Core, includes fonts, colors and multiple buttons themes used through out",
+               
+               "fonts.json",
+               "colors.json",
+
+               "buttons.json",
+               "alert-buttons.json",
+               "toolbar-buttons.json",
+               
+               "comment:------------------------------------------ View Controllers",
+
+               "RBPageViewController.json",
+               "RBTabbedPageContainerViewController.json",
+               
+               "comment:------------------------------------------ Cells",
+               
+               "RBBaseCellView.json",
+               "RBSimpleCellView.json",
+               "RBButtonCellView.json",
+               
+               "RBTooltipView.json",
+               
+               "comment:------------------------------------------ Alerts",
+               
+               "RBToastAlertView.json",
+               "RBAlertViewController.json",
+               "RBFormAlertViewController.json",
+               
+               "comment:------------------------------------------ Fields",
+               
+               "RBDateTimeField.json",
+               "RBImageSelectionField.json",
+               "RBListField.json",
+               "RBMultipleChoiceField.json",
+               "RBPhotoField.json",
+               "RBSliderField.json",
+               "RBSwitchField.json",
+               "RBTextField.json",
+               "RBTextViewField.json",
+               "RBRatingField.json",
+               
+               "comment:------------------------------------------ Managed Forms",
+               
+               "form-common.json",
+               "RBManagedFormView.json",
+               "RBManagedFormInputToolbar.json",               
+               
+               "comment:------------------------------------------ Containers",
+               
+               "RBSearchContainerView.json",
+               "RBSlidingPageContainerView.json",
+               
+               "comment:------------------------------------------ Extend Views",
+               
+               "RBBannerExtendView.json",
+               "RBRefreshExtendView.json",
+               "RBNextPageExtendView.json",
+               
+               "comment:------------------------------------------ Views",
+               
+               "RBLabel.json",
+
+               "RBButton.json",
+
+               "RBToggleButton.json",
+
+               "RBMenuView.json",
+               
+               "RBTooltipView.json",
+               
+               "RBActivityView.json",
+               
+               "RBToolbarView.json",
+               
+               "RBWebViewToolbarView.json"
+               
+               ]
+}

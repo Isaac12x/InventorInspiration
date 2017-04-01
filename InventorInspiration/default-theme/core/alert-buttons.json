@@ -1,0 +1,73 @@
+{
+    "alert-button":
+    {
+        "inherits": "ref://base-alert-button"
+    },
+    
+    "alert-primary-button":
+    {
+        "inherits": "ref://base-alert-button",
+        
+        "borderWidth": 2
+    },
+    
+    "base-alert-button":
+    {
+        "clearPreviousThemingValues": true,
+        
+        "borderWidth": 1,
+        "borderColor": "ref://color-accent-lighter",
+        
+        "padding": [ 8, 8, 8, 8 ],
+        "orientation": "horizontal",
+        "spacing": 5,
+        
+        "backgroundColor": "ref://color-accent",
+        
+        "titleColor": "ref://color-text-light",
+        "imageTintColor": "ref://color-icon-light",
+        
+        "imageView":
+        {
+            "alpha": 1.0,
+            "contentMode": "scaleAspectFit"
+        },
+        
+        "titleLabel":
+        {
+            "font": "ref://standard-body-font"
+        },
+        
+        "highlighted":
+        {
+            "backgroundColor": "ref://color-accent-darker",
+            
+            "imageView":
+            {
+                "alpha": 0.5
+            }
+        },
+        
+        "selected":
+        {
+            "backgroundColor": "ref://color-accent-darker",
+            
+            "imageView":
+            {
+                "alpha": 0.5
+            }
+        },
+        
+        "disabled":
+        {
+            "titleColorAlpha": 0.5,
+            "borderColorAlpha": 0.5,
+            "backgroundColorAlpha": 0.5,
+            
+            "imageView":
+            {
+                "alpha": 0.5
+            }
+        }
+    }
+}

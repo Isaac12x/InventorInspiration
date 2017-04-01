@@ -1,0 +1,23 @@
+{
+    "managed-form-cancel-button":
+    {
+        "inherits": "ref://button",
+        
+        "padding": [ 8, 2, 8, 2 ]
+    },
+    
+    "managed-form-submit-button":
+    {
+        "inherits": "ref://accent-button",
+        
+        "padding": [ 8, 2, 8, 2 ],
+    },
+    
+    "managed-form-field-label":
+    {
+        "padding": [ 10, 10, 0, 10 ],
+        "textAlignment": "left",
+        "textColor": "ref://color-text-dark",
+        "font": "ref://standard-headline-font"
+    }
+}

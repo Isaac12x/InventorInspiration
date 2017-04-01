@@ -1,0 +1,18 @@
+{
+    "RBManagedFormView":
+    {
+        "fieldLabels": "ref://managed-form-field-label",
+        
+        "submitButton":
+        {
+            "clearPreviousThemingValues": true,
+            "inherits": "ref://managed-form-submit-button",
+        },
+        
+        "cancelButton":
+        {
+            "clearPreviousThemingValues": true,
+            "inherits": "ref://managed-form-cancel-button",
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "RBTabbedPageContainerViewController":
+    {
+        "tabBar":
+        {
+            "backgroundColor": "ref://color-primary",
+            "borderWidth": 1,
+            "borderEdges": "top",
+            "borderColor": "#B5B5B5",
+        },
+        
+        "button":
+        {
+            "inherits": "ref://toolbar-toggle-button",
+            "contentEdgeInsets": [ 5, 5, 5, 5 ],
+            
+            "backgroundColor": "ref://color-background",
+            "backgroundColorAlpha": 0.1,
+            
+            "selected":
+            {
+                "backgroundColorAlpha": 0.3
+            }
+        }
+    }
+}

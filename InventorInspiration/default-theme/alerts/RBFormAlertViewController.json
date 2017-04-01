@@ -1,0 +1,41 @@
+{
+    "RBFormAlertViewController":
+    {
+        "backgroundColor": "ref://color-background",
+        
+        "positioner":
+        {
+            "spacing": 10,
+            "dimensions": [ 1 ],
+            "orientation": "vertical",
+            "sizing": "evenly",
+            "margin": [10, 10, 10, 10],
+        },
+        
+        "buttonPositioner":
+        {
+            "spacing": 10,
+            "dimensions": [ 1 ],
+            "orientation": "vertical",
+            "sizing": "evenly",
+            "margin": [0, 0, 0, 0],
+        },
+        
+        "buttons":
+        {
+            "inherits": "ref://alert-button"
+        },
+        
+        "button_formAlertSubmitButtonIdentifier":
+        {
+            "clearPreviousThemingValues": true,
+            "inherits": "ref://managed-form-submit-button"
+        },
+        
+        "button_formAlertCancelButtonIdentifier":
+        {
+            "clearPreviousThemingValues": true,
+            "inherits": "ref://managed-form-cancel-button"
+        }
+    }
+}

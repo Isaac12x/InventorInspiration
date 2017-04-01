@@ -1,0 +1,41 @@
+{
+    "RBAlertViewController":
+    {
+        "backgroundColor": "ref://color-background",
+        
+        "positioner":
+        {
+            "spacing": 10,
+            "dimensions": [ 1 ],
+            "orientation": "vertical",
+            "sizing": "evenly",
+            "margin": [10, 10, 10, 10],
+        },
+                
+        "buttonPositioner":
+        {
+            "spacing": 10,
+            "dimensions": [ 1 ],
+            "orientation": "vertical",
+            "sizing": "evenly",
+            "margin": [10, 10, 10, 10],
+        },
+        
+        "textView":
+        {
+            "textAlignment": "center",
+            "font": "ref://standard-body-font",
+            "textColor": "ref://color-text-dark",
+        },
+        
+        "buttons":
+        {
+            "inherits": "ref://alert-button"
+        },
+        
+        "primaryButton":
+        {
+            "inherits": "ref://alert-primary-button"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "standard-headline-font":
+    {
+        "style": "headline",
+        "name": "HelveticaNeue-Bold"
+    },
+        
+    "standard-subheadline-font":
+    {
+        "style": "subHeadline",
+        "name": "HelveticaNeue",
+    },
+    
+    "standard-caption1-font":
+    {
+        "style": "caption1",
+        "name": "HelveticaNeue"
+    },
+    
+    "standard-caption2-font":
+    {
+        "style": "caption2",
+        "name": "HelveticaNeue"
+    },
+    
+    "standard-body-font":
+    {
+        "style": "body",
+        "name": "HelveticaNeue-Light"
+    },
+    
+    "bold-body-font":
+    {
+        "style": "body",
+        "name": "HelveticaNeue-Bold"
+    },
+    
+    "standard-footnote-font":
+    {
+        "style": "footnote",
+        "name": "HelveticaNeue-UltraLight"
+    }
+}

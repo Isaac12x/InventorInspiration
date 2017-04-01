@@ -1,0 +1,36 @@
+{
+    "RBButtonCellView":
+    {
+        "inherits": "ref://RBBaseCellView",
+        
+        "body":
+        {
+            "backgroundColor": "ref://color-background",
+            
+            "titleLabel":
+            {
+                "textColor": "ref://color-text-dark"
+            },
+            
+            "highlighted":
+            {
+                "backgroundColor": "ref://color-accent",
+                
+                "titleLabel":
+                {
+                    "textColor": "ref://color-text-light"
+                }
+            },
+            
+            "selected":
+            {
+                "backgroundColor": "ref://color-accent",
+                
+                "titleLabel":
+                {
+                    "textColor": "ref://color-text-light"
+                }
+            }
+        }
+    }
+}

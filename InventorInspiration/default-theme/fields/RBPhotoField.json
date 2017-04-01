@@ -1,0 +1,42 @@
+{
+    "RBPhotoField":
+    {
+        "buttonSpacing": 5,
+        "emptyImage": "glyph://image/palette-grey-400/32",
+        
+        "imageView":
+        {
+            "contentMode": "scaleAspectFit"
+        },
+        
+        "cameraButton":
+        {
+            "inherits": "ref://alert-primary-button",
+            "image": "glyph://camera/color-primary/32",
+            "title": "Camera"
+        },
+        
+        "libraryButton":
+        {
+            "inherits": "ref://alert-primary-button",
+            "image": "glyph://folder-open/color-primary/32",
+            "title": "Library"
+        },
+        
+        "validState":
+        {
+            "imageView":
+            {
+                
+            }
+        },
+        
+        "invalidState":
+        {
+            "imageView":
+            {
+                
+            }
+        }
+    }
+}

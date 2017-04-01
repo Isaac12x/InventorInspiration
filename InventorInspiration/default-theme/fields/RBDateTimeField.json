@@ -1,0 +1,9 @@
+{
+    "RBDateTimeField":
+    {
+        "inputView":
+        {
+            "textColor": "ref://color-text-dark"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "RBToolbarView":
+    {
+        "backgroundColor": "ref://color-primary",
+        
+        "buttons":
+        {
+            "inherits": "ref://toolbar-button",
+        },
+        
+        "toggleButtons":
+        {
+            "inherits": "ref://toolbar-toggle-button",
+        }
+    }
+}

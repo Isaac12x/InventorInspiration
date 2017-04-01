@@ -1,0 +1,111 @@
+{
+    "RBSimpleCellView":
+    {
+        "inherits": "ref://RBBaseCellView",
+        
+        "body":
+        {
+            "borderWidth": 0,
+            "backgroundColor": "ref://color-background",
+            
+            "margin": [ 5, 10, 5, 10 ],
+            "spacing": 10,
+            
+            "imageView":
+            {
+                "borderWidth": 1,
+                "cornerRadius": 1,
+                "borderColor": "ref://palette-grey-500"                
+            },
+            
+            "titleLabel":
+            {
+                "textColor": "ref://color-text-dark",                
+                "font": "ref://standard-headline-font"
+            },
+            
+            "detailLabel":
+            {
+                "textColor": "ref://color-text-dark",                
+                "font": "ref://standard-footnote-font"
+            },
+            
+            "selected":
+            {
+                "backgroundColor": "ref://color-accent",
+                
+                "titleLabel":
+                {
+                    "textColor": "ref://color-text-light"
+                },
+                
+                "detailLabel":
+                {
+                    "textColor": "ref://color-text-light"
+                }
+            },
+            
+            "highlighted":
+            {
+                "backgroundColor": "ref://color-accent",
+                
+                "titleLabel":
+                {
+                    "textColor": "ref://color-text-light"
+                },
+                
+                "detailLabel":
+                {
+                    "textColor": "ref://color-text-light"
+                }
+            },
+            
+            "alternate":
+            {
+                "backgroundColor": "ref://palette-grey-300",
+                
+                "titleLabel":
+                {
+                    "textColor": "ref://color-text-dark"
+                },
+                
+                "detailLabel":
+                {
+                    "textColor": "ref://color-text-dark",
+                    
+                    "font": "ref://standard-footnote-font"
+                },
+                
+                "selected":
+                {
+                    "backgroundColor": "ref://color-accent",
+                    
+                    "titleLabel":
+                    {
+                        "textColor": "ref://color-text-light"
+                    },
+                    
+                    "detailLabel":
+                    {
+                        "textColor": "ref://color-text-light"
+                    }
+                },
+                
+                "highlighted":
+                {
+                    "backgroundColor": "ref://color-accent",
+                    
+                    "titleLabel":
+                    {
+                        "textColor": "ref://color-text-light"
+                    },
+                    
+                    "detailLabel":
+                    {
+                        "textColor": "ref://color-text-light"
+                    }
+                }
+            }
+        }
+    }
+}

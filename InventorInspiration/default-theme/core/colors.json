@@ -1,0 +1,28 @@
+{
+    "color-text-dark": "ref://palette-black",
+    "color-text-light": "ref://palette-white",
+    "color-text-pale": "#888888",
+    
+    "color-icon-dark": "ref://palette-black",
+    "color-icon-light": "ref://palette-white",
+    
+    "color-background": "ref://palette-white",
+    
+    "color-primary": "ref://palette-blue-grey-500",
+    "color-primary-darker": "ref://palette-blue-grey-700",
+    "color-primary-lighter": "ref://palette-blue-grey-200",
+    
+    "color-secondary": "ref://palette-cyan-500",
+    "color-secondary-darker": "ref://palette-cyan-700",
+    "color-secondary-lighter": "ref://palette-cyan-200",
+    
+    "color-accent": "ref://palette-pink-400",
+    "color-accent-darker": "ref://palette-pink-700",
+    "color-accent-lighter": "ref://palette-pink-200",
+    
+    "color-cell-selected": "ref://palette-yellow-700",
+    
+    "color-priority-low": "ref://palette-blue-500",
+    "color-priority-medium": "ref://palette-amber-500",
+    "color-priority-high": "ref://palette-red-500"
+}

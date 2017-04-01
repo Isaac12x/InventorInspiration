@@ -1,0 +1,82 @@
+{
+    "button":
+    {
+        "inherits": "ref://base-button"
+    },
+    
+    "toggle-button":
+    {
+        "inherits": "ref://base-button",
+        
+        "highlighted":
+        {
+            "borderColor": "ref://color-primary-lighter",
+            "backgroundColor": "ref://color-primary-lighter",
+        },
+        
+        "selected":
+        {
+            "borderColor": "ref://color-primary-lighter",
+            "backgroundColor": "ref://color-primary-lighter",
+        }
+    },
+    
+    "accent-button":
+    {
+        "inherits": "ref://base-button",
+        
+        "backgroundColor": "ref://color-accent",
+        "borderColor": "ref://color-accent-lighter",
+        
+        "highlighted":
+        {
+            "backgroundColor": "ref://color-accent-lighter",
+        },
+        
+        "selected":
+        {
+            "backgroundColor": "ref://color-accent-lighter",
+        }
+    },
+    
+    "base-button":
+    {
+        "backgroundColor": "ref://color-primary",
+        "borderColor": "ref://color-primary-lighter",
+        
+        "titleColor": "ref://color-text-light",
+        "imageTintColor": "ref://color-icon-light",
+        
+        "titleLabel":
+        {
+            "font": "ref://standard-body-font"
+        },
+        
+        "imageView":
+        {
+            "contentMode": "scaleAspectFit"
+        },
+        
+        "highlighted":
+        {
+            "backgroundColor": "ref://color-primary-darker",
+        },
+        
+        "selected":
+        {
+            "backgroundColor": "ref://color-primary-darker",
+        },
+        
+        "disabled":
+        {
+            "titleColorAlpha": 0.5,
+            "borderColorAlpha": 0.5,
+            "backgroundColorAlpha": 0.5,
+            
+            "imageView":
+            {
+                "alpha": 0.5
+            }
+        }
+    }
+}

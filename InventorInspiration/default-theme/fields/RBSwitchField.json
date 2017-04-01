@@ -1,0 +1,10 @@
+{
+    "RBSwitchField":
+    {
+        "spacing": 5,
+        "label": "ref://managed-form-field-label",
+        
+        "onTintColor": "ref://color-accent",
+        "offTintColor": "ref://color-background",        
+    }
+}

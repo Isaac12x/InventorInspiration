@@ -1,0 +1,28 @@
+{
+    "RBSliderField":
+    {
+        "rangeImageView":
+        {
+            "minimumSize": [ 0, 30 ],
+            "borderWidth": 1,
+            "borderColor": "ref://palette-grey-400"
+        },
+        
+        "selectedRangeImageView":
+        {
+            "backgroundColor": "ref://color-accent"
+        },
+        
+        "startImageView":
+        {
+            "minimumSize": [ 25, 30 ],
+            "backgroundColor": "ref://palette-grey-400"
+        },
+        
+        "endImageView":
+        {
+            "minimumSize": [ 25, 30 ],
+            "backgroundColor": "ref://palette-grey-400"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "RBRefreshExtendView":
+    {
+        "label":
+        {
+            "text": "Pull to refresh",
+            
+            "font": "ref://standard-caption2-font",
+            "textColor": "ref://color-text-dark",
+            "textAlignment": "center"
+        },
+        
+        "revealed":
+        {
+            "label":
+            {
+                
+            }
+        },
+        
+        "opened":
+        {
+            "label":
+            {
+                
+            }
+        }
+    },
+}

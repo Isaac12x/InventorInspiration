@@ -1,0 +1,20 @@
+{
+    "RBToastAlertView":
+    {
+        "backgroundColor": "ref://palette-grey-900",
+        
+        "cornerRadius": 5,
+        "margin": [ 5, 5, 5, 5 ],
+        
+        "presentationFadeInDuration": 1,
+        "presentationFadeOutDuration": 2.5,
+        "presentationVerticalAlignment": "middle",
+        "presentationHorizontalAlignment": "center",
+        
+        "messageLabel":
+        {
+            "font": "ref://standard-body-font",
+            "textColor": "ref://color-text-light"
+        }
+    }
+}

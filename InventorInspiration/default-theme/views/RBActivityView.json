@@ -1,0 +1,22 @@
+{
+    "RBActivityView":
+    {
+        "style": "whiteLarge",
+        "margin": [ 10, 10, 10, 10 ],
+        
+        "backgroundColorAlpha": 0.7,
+        "backgroundColor": "ref://palette-grey-900",
+        
+        "progressView":
+        {
+            "barWidth": 10,
+            "barShouldFillRadius": false,
+            "barColor": "ref://palette-grey-500",
+        },
+        
+        "titleLabel":
+        {
+            "textColor": "ref://color-text-light"
+        }
+    }
+}
