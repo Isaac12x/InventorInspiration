@@ -191,9 +191,11 @@ class MasterViewController: UITableViewController {
         alertController.addAction(defaultAction)
         self.present(alertController, animated: true, completion: nil)
     }
+    
 
+    // TODO: Implement locking ability
     func lockApp() {
-        // Implement locking ability
+        
     }
 
     
@@ -235,7 +237,7 @@ extension MasterViewController {
         self.navigationController?.title = "II"
         
         // Add a locker to the left of the navigation
-        let lockButton = UIBarButtonItem(image: UIImage(named: "Locked"), landscapeImagePhone: UIImage(named: "Locked"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(MasterViewController.lockApp))
+        let lockButton = UIBarButtonItem(image: UIImage(named: "Lock"), landscapeImagePhone: UIImage(named: "Lock"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(MasterViewController.lockApp))
         self.navigationItem.leftBarButtonItem = lockButton
         
         
