@@ -23,6 +23,11 @@
 		1E9773441E82BDDC001644F8 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9773431E82BDDC001644F8 /* Photo.swift */; };
 		1E9773461E82C13B001644F8 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9773451E82C13B001644F8 /* Photo+CoreDataProperties.swift */; };
 		1E9773481E82C929001644F8 /* InspireImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9773471E82C929001644F8 /* InspireImageCollection.swift */; };
+		ECEDCAAE1E955AD900DB6656 /* LockingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDCAAD1E955AD900DB6656 /* LockingVC.swift */; };
+		ECEDCAB01E955B0C00DB6656 /* AdminCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDCAAF1E955B0C00DB6656 /* AdminCell.swift */; };
+		ECEDCAB21E955B5B00DB6656 /* InspirationRolloutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDCAB11E955B5B00DB6656 /* InspirationRolloutVC.swift */; };
+		ECEDCAB41E955BCC00DB6656 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDCAB31E955BCC00DB6656 /* LocalAuthentication.framework */; };
+		ECEDCAB61E955CAB00DB6656 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDCAB51E955CAB00DB6656 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		1E9773431E82BDDC001644F8 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1E9773451E82C13B001644F8 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1E9773471E82C929001644F8 /* InspireImageCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspireImageCollection.swift; sourceTree = "<group>"; };
+		ECEDCAAD1E955AD900DB6656 /* LockingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LockingVC.swift; path = ../LockingVC.swift; sourceTree = "<group>"; };
+		ECEDCAAF1E955B0C00DB6656 /* AdminCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminCell.swift; sourceTree = "<group>"; };
+		ECEDCAB11E955B5B00DB6656 /* InspirationRolloutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspirationRolloutVC.swift; sourceTree = "<group>"; };
+		ECEDCAB31E955BCC00DB6656 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		ECEDCAB51E955CAB00DB6656 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEDCAB41E955BCC00DB6656 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				1E9773031E8297A2001644F8 /* MasterViewController.swift */,
+				ECEDCAB51E955CAB00DB6656 /* SettingsViewController.swift */,
 				1E97733F1E82A41D001644F8 /* ImageCollectionVC.swift */,
 				1E9773051E8297A2001644F8 /* DetailViewController.swift */,
+				ECEDCAB11E955B5B00DB6656 /* InspirationRolloutVC.swift */,
+				ECEDCAAD1E955AD900DB6656 /* LockingVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -144,6 +158,7 @@
 				1E9773011E8297A2001644F8 /* AppDelegate.swift */,
 				1E09485D1E82E87D00B68967 /* Model */,
 				1E9773411E82A8C0001644F8 /* CollectionViewCell.swift */,
+				ECEDCAAF1E955B0C00DB6656 /* AdminCell.swift */,
 				1E0EDDA01E843D2A0033B1DB /* Controller */,
 				1E9773071E8297A2001644F8 /* Main.storyboard */,
 				1E97730A1E8297A2001644F8 /* Assets.xcassets */,
@@ -175,6 +190,7 @@
 		1E97733B1E829E9C001644F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECEDCAB31E955BCC00DB6656 /* LocalAuthentication.framework */,
 				1E97733C1E829E9C001644F8 /* Redbeard.framework */,
 			);
 			name = Frameworks;
@@ -191,6 +207,7 @@
 				1E9772FB1E8297A2001644F8 /* Frameworks */,
 				1E9772FC1E8297A2001644F8 /* Resources */,
 				1E9773311E8297C3001644F8 /* RedBeard AppStore script */,
+				ECEDCB281E96ACFE00DB6656 /* AutoIncrementBuild */,
 			);
 			buildRules = (
 			);
@@ -328,6 +345,20 @@
 			shellPath = /bin/sh;
 			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Redbeard.framework/strip-frameworks.sh\"";
 		};
+		ECEDCB281E96ACFE00DB6656 /* AutoIncrementBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = AutoIncrementBuild;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -338,10 +369,14 @@
 				1E9773481E82C929001644F8 /* InspireImageCollection.swift in Sources */,
 				1E9773461E82C13B001644F8 /* Photo+CoreDataProperties.swift in Sources */,
 				1E9773441E82BDDC001644F8 /* Photo.swift in Sources */,
+				ECEDCAB21E955B5B00DB6656 /* InspirationRolloutVC.swift in Sources */,
 				1E9773421E82A8C0001644F8 /* CollectionViewCell.swift in Sources */,
 				1E9773061E8297A2001644F8 /* DetailViewController.swift in Sources */,
+				ECEDCAAE1E955AD900DB6656 /* LockingVC.swift in Sources */,
+				ECEDCAB01E955B0C00DB6656 /* AdminCell.swift in Sources */,
 				1E9773041E8297A2001644F8 /* MasterViewController.swift in Sources */,
 				1E9773401E82A41D001644F8 /* ImageCollectionVC.swift in Sources */,
+				ECEDCAB61E955CAB00DB6656 /* SettingsViewController.swift in Sources */,
 				1E9773021E8297A2001644F8 /* AppDelegate.swift in Sources */,
 				1E0EDDA21E8573920033B1DB /* Constants.swift in Sources */,
 			);

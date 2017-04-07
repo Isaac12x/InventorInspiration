@@ -6,5 +6,5 @@ target 'installer' do
   use_frameworks!
 	
   pod 'TNImageSliderViewController'
-
+  pod 'ImageSlideshow'
 end

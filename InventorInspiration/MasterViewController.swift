@@ -9,9 +9,11 @@
 import UIKit
 import Redbeard
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate {
 
     // MARK: Properties
+    
+    @IBOutlet weak var tableView: UITableView!
     
     var detailViewController: DetailViewController? = nil
     var imageCollectionView: ImageCollectionVC? = nil
@@ -85,15 +87,16 @@ class MasterViewController: UITableViewController {
 
     // MARK: - Table View
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // reference the cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "inspirationCell", for: indexPath)
 
@@ -143,7 +146,7 @@ class MasterViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.allowsSelectionDuringEditing = false
         
         let controller = storyboard!.instantiateViewController(withIdentifier: "ManagerNavigationController") as? UINavigationController
@@ -151,12 +154,12 @@ class MasterViewController: UITableViewController {
 
     }
 
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
 
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let alertController = UIAlertController(title: "Wait", message: "All your images will be deleted. Are you sure you want to continue?", preferredStyle: UIAlertControllerStyle.alert)
             let defaultAction = UIAlertAction(title: "Yes", style: .destructive, handler: { (action) in
@@ -195,7 +198,8 @@ class MasterViewController: UITableViewController {
 
     // TODO: Implement locking ability
     func lockApp() {
-        
+        let lockVC = storyboard?.instantiateViewController(withIdentifier: "LockingVC") as! LockingVC
+        navigationController?.pushViewControllerFromTop(viewController: lockVC)
     }
 
     
@@ -235,6 +239,14 @@ extension MasterViewController {
         self.navigationItem.rightBarButtonItem = addButton
         // Better to put an image here :D
         self.navigationController?.title = "II"
+        
+        // Navigation logo
+        let image = UIImage(named: "naviLogo")
+        let navLogo = UIImageView(image: image)
+        navLogo.frame = CGRect(x: 0, y: 0, width: 10, height: 20)
+        self.navigationItem.titleView = navLogo
+        
+        
         
         // Add a locker to the left of the navigation
         let lockButton = UIBarButtonItem(image: UIImage(named: "Lock"), landscapeImagePhone: UIImage(named: "Lock"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(MasterViewController.lockApp))

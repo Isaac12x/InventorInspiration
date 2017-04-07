@@ -20,8 +20,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var randomSwitcher: UISwitch!
     // @IBOutlet weak var shouldDisplayNotes: UILabel!
     // @IBOutlet weak var shouldDisplayNotes: UISwitch!
-    // gesture recognizer plays the movie
+    
+    // gesture recognizer plays the movie -- it's added to the image so the user never fails to play the rollout
     @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
+    
+    var playImage: UIImageView?
+    let playTapGestureRecognizer = UITapGestureRecognizer(target: self(), action: #selector(DetailViewController.playTheInspirationalMovieWithOptions(rate:pitch:randomized:))
     
     var workspaceImageCollection: [Photo]?
     
@@ -42,6 +46,16 @@ class DetailViewController: UIViewController {
         sliderTitleLabel.text = ""
         speedSliderLabel.text = "0"
         switchLabel.text = "Randomize?"
+        
+        // Create the play image frame
+        playImage = UIImageView(frame: CGRect(x: self.view.frame.width / 2, y: self.view.frame.height / 2, width: 200, height: 200))
+        playImage?.image = UIImage(named:  "")
+        playImage?.addGestureRecognizer(playTapGestureRecognizer)
+        
+        // Check it's there...
+        if let play = playImage {
+            self.imageRoller.addSubview(playImage!)
+        }
         
         //configure the navigation bar
         let backButton = navigationController?.navigationItem.backBarButtonItem
@@ -72,7 +86,7 @@ class DetailViewController: UIViewController {
     }
 
     // for now default to endless rotation
-    func playTheInspirationalMovieWithOptions(rate: CGFloat, pitch: CGFloat, randomized: Bool = false) {
+    func configureInspirationPlayerWithOptions(rate: CGFloat, pitch: CGFloat, randomized: Bool = false) {
         // get the data first
         
         // check if user wants it randomized
@@ -85,6 +99,12 @@ class DetailViewController: UIViewController {
             
             // pass the data to the presenter
         }
+    }
+    
+    
+    // the actual action that plays the rollout
+    func playInspirationRollout() {
+        // transition to next VC
     }
     
 }
